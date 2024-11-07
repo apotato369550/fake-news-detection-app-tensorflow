@@ -6,7 +6,6 @@ class CrawlingSpider(CrawlSpider):
     allowed_domains = ["toscrape.com"] 
     start_urls = ["http://books.toscrape.com/"]
 
-    PROXY_SERVER = "127.0.0.1"
 
     rules = (
         Rule(LinkExtractor(allow="catalogue/category")),

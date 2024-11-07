@@ -1,4 +1,4 @@
-# Scrapy settings for my_first_crawler project
+# Scrapy settings for news_article_crawler project
 #
 # For simplicity, this file contains only settings considered important or
 # commonly used. You can find more settings consulting the documentation:
@@ -7,14 +7,14 @@
 #     https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #     https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 
-BOT_NAME = "my_first_crawler"
+BOT_NAME = "news_article_crawler"
 
-SPIDER_MODULES = ["my_first_crawler.spiders"]
-NEWSPIDER_MODULE = "my_first_crawler.spiders"
+SPIDER_MODULES = ["news_article_crawler.spiders"]
+NEWSPIDER_MODULE = "news_article_crawler.spiders"
 
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
-#USER_AGENT = "my_first_crawler (+http://www.yourdomain.com)"
+#USER_AGENT = "news_article_crawler (+http://www.yourdomain.com)"
 
 # Obey robots.txt rules
 ROBOTSTXT_OBEY = True
@@ -45,15 +45,14 @@ ROBOTSTXT_OBEY = True
 # Enable or disable spider middlewares
 # See https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 #SPIDER_MIDDLEWARES = {
-#    "my_first_crawler.middlewares.MyFirstCrawlerSpiderMiddleware": 543,
+#    "news_article_crawler.middlewares.NewsArticleCrawlerSpiderMiddleware": 543,
 #}
 
 # Enable or disable downloader middlewares
 # See https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
-DOWNLOADER_MIDDLEWARES = {
-    # 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware': 1,
-    "my_first_crawler.middlewares.MyFirstCrawlerDownloaderMiddleware": 543,
-}
+#DOWNLOADER_MIDDLEWARES = {
+#    "news_article_crawler.middlewares.NewsArticleCrawlerDownloaderMiddleware": 543,
+#}
 
 # Enable or disable extensions
 # See https://docs.scrapy.org/en/latest/topics/extensions.html
@@ -64,7 +63,7 @@ DOWNLOADER_MIDDLEWARES = {
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
 #ITEM_PIPELINES = {
-#    "my_first_crawler.pipelines.MyFirstCrawlerPipeline": 300,
+#    "news_article_crawler.pipelines.NewsArticleCrawlerPipeline": 300,
 #}
 
 # Enable and configure the AutoThrottle extension (disabled by default)
